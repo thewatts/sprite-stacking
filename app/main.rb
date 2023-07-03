@@ -24,9 +24,9 @@ class Car
       self.angle -= 1
     end
 
-    if inputs.keyboard.up || inputs.keyboard.key_down.tab
+    if inputs.keyboard.up || inputs.keyboard.key_down.close_square_brace
       self.spread += 1
-    elsif inputs.keyboard.down || inputs.keyboard.key_down.shift
+    elsif inputs.keyboard.down || inputs.keyboard.key_down.open_square_brace
       self.spread -= 1
     end
 
@@ -95,8 +95,8 @@ def instructions(args)
 
   args.outputs.labels << [right_padding, 30.from_top, "A/D || LEFT/RIGHT: Rotate".rjust(30)]
   args.outputs.labels << [right_padding, 55.from_top, "W/S || UP/DOWN: Spread".rjust(30)]
-  args.outputs.labels << [right_padding, 80.from_top, "TAB/SHIFT: Spread (fine)".rjust(30)]
-  args.outputs.labels << [right_padding, 105.from_top, "=/-: Scale".rjust(30)]
+  args.outputs.labels << [right_padding, 80.from_top, "[ or ]: Spread (fine)".rjust(30)]
+  args.outputs.labels << [right_padding, 105.from_top, "= or -: Scale".rjust(30)]
 end
 
 def tick(args)
