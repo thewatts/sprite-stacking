@@ -3,7 +3,7 @@ devid=thewatts
 devtitle=Nathaniel Watts
 gameid=sprite-stacking-example
 gametitle=Sprite Stacking
-version=0.1
+version=0.2
 # icon=metadata/icon.png
 
 # === Flags available at all licensing tiers ===
